@@ -1,13 +1,41 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the beginning of something special!</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'core/css/styles.css' %}" />
 </head>
 <body>
-    hey there
-    
+
+    <header>
+        <nav>
+            <div class="nav">
+                <span>adagram</span>
+                <ul>
+                    <li><a href="" class="a">Home</a></li>
+                    <li><a href="" class="a">About</a></li>
+                    <li><a href="" class="a">Contact</a></li>
+                </ul>
+                <img src="{% static 'core/images/profile_icon.png' %}">
+            </div>
+        </nav>
+    </header>
+
+    <div class="sec2" style="background-image: url({% static 'core/images/bg_sec2g.png' %}); width: 1920px; height: 450px;">
+        <ul>
+            <li>Connect</li>
+            <li>Meet</li>
+            <li>Discover</li>
+            <li>Minimalistic</li>
+        </ul>
+        <span>Welcome to <span style="font-weight: 900;">adagram</span></span>
+        <span class="span2">Your one-stop solution to a minimalistic
+            social media experience.</span>
+    </div>
+<!--<img class="sec2img" src="{% static 'core/images/bg_sec2g.png' %}">
 
     
 </body>
